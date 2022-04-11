@@ -1,0 +1,25 @@
+define main() => void
+{
+	int i=1,first=0,second=1
+	int sum=0
+	when(1==1)
+	{
+		lint result=first+second
+		if(result>=4000000)
+		{
+			break
+		}
+		if(first%2==0)
+		{
+			sum=sum+first
+		}elif(second%2==0)
+		{
+			sum=sum+second
+		}
+		first=second
+		second=result
+		inc i
+	}
+	putln("SUM: "..sum)
+		
+}
